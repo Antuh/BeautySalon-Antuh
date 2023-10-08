@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 D:\Programmirovanie\Program\20.101-02-BeautySalon\20.101-02-BeautySalon\App.xaml
-4-1127652227
+51346224439
 2-1147362915
-24-1557348997
+25-810108891
 18-1883766305
-pages\ClientPage.xaml;window\AddEditClientWindow.xaml;window\ClientServiceWindow.xaml;window\MainWindow.xaml;
+pages\ClientPage.xaml;window\AddEditClientWindow.xaml;window\ClientServiceWindow.xaml;window\EditServices.xaml;window\MainWindow.xaml;
 
 True
 

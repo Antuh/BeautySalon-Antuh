@@ -27,3 +27,5 @@ D:\Programmirovanie\Program\20.101-02-BeautySalon\20.101-02-BeautySalon\obj\Debu
 D:\Programmirovanie\Program\20.101-02-BeautySalon\20.101-02-BeautySalon\obj\Debug\20.101-02-BeautySalon.csproj.CopyComplete
 D:\Programmirovanie\Program\20.101-02-BeautySalon\20.101-02-BeautySalon\obj\Debug\window\ClientServiceWindow.g.cs
 D:\Programmirovanie\Program\20.101-02-BeautySalon\20.101-02-BeautySalon\obj\Debug\window\ClientServiceWindow.baml
+D:\Programmirovanie\Program\20.101-02-BeautySalon\20.101-02-BeautySalon\obj\Debug\window\EditServices.g.cs
+D:\Programmirovanie\Program\20.101-02-BeautySalon\20.101-02-BeautySalon\obj\Debug\window\EditServices.baml

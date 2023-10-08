@@ -20,6 +20,7 @@ namespace _20._101_02_BeautySalon.model
             this.ClientService = new HashSet<ClientService>();
             this.ServicePhoto = new HashSet<ServicePhoto>();
         }
+
     
         public int ID { get; set; }
         public string Title { get; set; }
@@ -33,5 +34,57 @@ namespace _20._101_02_BeautySalon.model
         public virtual ICollection<ClientService> ClientService { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ServicePhoto> ServicePhoto { get; set; }
+        public string ImgPath
+        {
+            get
+            {
+                var path = "/ImagesAndIcons/Услуги салона красоты/" + this.MainImagePath;
+                return path;
+            }
+        }
+
+        public int DurationInMin
+        {
+            get
+            {
+                return this.DurationInSeconds / 60;
+            }
+        }
+
+        public double DiscountCost
+        {
+            get
+            {
+                if (Discount.HasValue)
+                {
+                    decimal result = Cost / 100;
+                    return (double)(Cost - result * (decimal)this.Discount);
+                }
+                else return (double)Cost;
+            }
+        }
+
+        public string DiscountText
+        {
+            get
+            {
+                if (this.Discount.HasValue) return $"*скидка {Discount}%";
+                else return "";
+            }
+        }
+
+        public string CostText
+        {
+            get
+            {
+                if (Discount.HasValue)
+                {
+                    double cost = (double)Cost;
+                    return cost.ToString();
+                }
+                else return "";
+            }
+        }
     }
 }
+

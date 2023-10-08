@@ -76,6 +76,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="window\EditServices.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="window\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -141,6 +145,9 @@
     </Compile>
     <Compile Include="window\ClientServiceWindow.xaml.cs">
       <DependentUpon>ClientServiceWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="window\EditServices.xaml.cs">
+      <DependentUpon>EditServices.xaml</DependentUpon>
     </Compile>
     <Compile Include="window\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>

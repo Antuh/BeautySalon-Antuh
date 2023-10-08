@@ -31,8 +31,21 @@ namespace _20._101_02_BeautySalon.classes
             Regex regex = new Regex("[^a-zа-яА-ЯA-Z -]+");
             return !regex.IsMatch(s);
         }
-
-    
+        public static bool ValidTitle(this string s)
+        {
+            Regex regex = new Regex("[^a-zа-яА-ЯA-Z -]+");
+            return !regex.IsMatch(s);
+        }
+        public static bool ValidDiscount(this string s)
+        {
+            Regex regex = new Regex("[^0-9]+");
+            return !regex.IsMatch(s);
+        }
+        public static bool ValidCost(this string s)
+        {
+            Regex regex = new Regex(@"^\d+(\.\d{0,2})?$");
+            return regex.IsMatch(s);
+        }
     }
 }
 

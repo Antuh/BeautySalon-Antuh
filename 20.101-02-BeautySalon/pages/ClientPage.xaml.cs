@@ -295,7 +295,7 @@ namespace _20._101_02_BeautySalon.pages
         {
             try
             {
-                ClientServiceWindow dlg = new ClientServiceWindow(LViewAgents.SelectedItem as Client, db);
+                ClientServiceWindow dlg = new ClientServiceWindow(LViewAgents.SelectedItem as Client, db, this);
                 dlg.Show();
             }
             catch (Exception ex)
