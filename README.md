@@ -1,2 +1,2 @@
 # BeautySalon-Antuh
-taken by Sopelka
+taken by ©Sopelka
